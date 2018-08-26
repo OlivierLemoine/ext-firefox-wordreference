@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "WordReference",
+    "version": "1.0",
+    
+    "description": "Ref to WordReference",
+
+    "icons": {
+        "200": "wr.png"
+    },
+    
+    "browser_action": {
+        "browser_style": true,
+        "default_popup": "a.html",
+        "default_icon": {
+            "200": "wr.png"
+        }
+    }
+}
