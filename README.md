@@ -1,0 +1,1 @@
+# ext-firefox-wordreference
