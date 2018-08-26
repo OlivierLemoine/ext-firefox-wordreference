@@ -1,7 +1,12 @@
-function openPage() {
+browser.menus.create({
+    id: 'Translate-word',
+    title: 'Translate %s',
+    contexts: ['selection'],
+    command: '_execute_page_action'
+});
+
+browser.menus.onClicked.addListener((info, tab) => {
     browser.tabs.create({
-      url: "https://developer.mozilla.org"
+        url: `http://www.wordreference.com/enfr/${info.selectionText}`
     });
-  }
-  
-browser.browserAction.onClicked.addListener(openPage);
+});
